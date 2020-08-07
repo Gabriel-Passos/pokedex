@@ -1,0 +1,44 @@
+:root {
+  --color-background: #AE011E;
+  --color-background-header: #DC0A2D;
+  --color-primary-circle: #1B699C;
+  --color-secondary-circle: #38ADF3;
+  --color-red-circle: #FF0000;
+  --color-yellow-circle: #FFCC00;
+  --color-green-circle: #21BF73;
+  --color-status-bar: #FFCC00;
+  --color-box-base: #cccccc;
+  --color-box-screen: #444444;
+  --color-input: #cccccc;
+  --color-text-in-box-base: #333333;
+  --color-text-input: #444444;
+
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--color-background);
+}
+
+body, input {
+  font: 400 1.6rem 'Share Tech Mono';
+  color: var(--color-text-input);
+}
+
+@media (min-width: 70px) {
+  :root {
+    font-size: 62.5%;
+  }
+}

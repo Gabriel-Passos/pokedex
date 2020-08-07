@@ -1,0 +1,47 @@
+#pokedex {
+  margin-bottom: 12rem;
+  width: 100%;
+}
+
+#pokedex > form {
+  margin-top: 8.8rem;
+}
+
+#pokedex > aside {
+  margin-top: 8.8rem;
+}
+
+#pokedex > div {
+  margin-top: 8.8rem;
+}
+
+@media (min-width: 860px) {
+  #pokedex {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "pokeScreen pokeInfo"  
+    ;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  #pokedex > div {
+    grid-area: pokeScreen;
+    margin-top: 150px;
+    align-self: flex-end;
+  }
+
+  #pokedex > form {
+    grid-area: pokeScreen;
+  }
+
+  #pokedex > aside {
+    grid-area: pokeInfo;
+  }
+}

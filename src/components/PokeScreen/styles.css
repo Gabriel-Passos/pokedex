@@ -1,0 +1,44 @@
+#poke-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poke-screen-content {
+  background: var(--color-box-base);
+  text-align: center;
+  padding: 1.6rem 3.6rem 2.6rem;
+  width: 90%;
+}
+
+.poke-screen-content fieldset {
+  background: var(--color-box-screen);
+  border: 0;
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 2rem 3rem;
+  height: 100%;
+  width: 100%;
+}
+
+.poke-screen-content fieldset #poke-stats {
+  margin-top: 6.8rem;
+}
+
+.poke-screen-content fieldset #poke-stats + #poke-stats {
+  margin-top: 1.2rem;
+}
+
+.poke-screen-content fieldset legend {
+  background: var(--color-box-base);
+  width: 28rem;
+  height: 4.5rem;
+  font-size: 3.6rem;
+  font-family: 'Share';
+  font-weight: 700;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3.8rem 3rem 0;
+  text-transform: uppercase;
+}
+
+.poke-screen-content fieldset > img {
+  width: 25rem;
+  margin: 4.8rem 0;
+}

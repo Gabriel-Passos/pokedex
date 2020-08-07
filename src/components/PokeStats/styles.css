@@ -1,0 +1,63 @@
+#poke-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#poke-stats .poke-stats-info {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#poke-stats .poke-stats-info strong, p {
+  color: var(--color-box-base);
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#poke-stats input {
+  width: 70%;
+  margin-top: 0.4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#poke-stats input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: var(--color-primary-circle);
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+#poke-stats input::-moz-range-thumb {
+  -webkit-appearance: none;
+  background: var(--color-primary-circle);
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+#poke-stats input::-ms-thumb {
+  -webkit-appearance: none;
+  background: var(--color-primary-circle);
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+#poke-stats input::-webkit-slider-runnable-track {
+  height: 1.6rem;
+  background: var(--color-yellow-circle);
+}
+
+#poke-stats input::-moz-range-track {
+  height: 1.6rem;
+  background: var(--color-yellow-circle);
+}
+
+#poke-stats input::-ms-track {
+  height: 1.6rem;
+  background: var(--color-yellow-circle);
+}

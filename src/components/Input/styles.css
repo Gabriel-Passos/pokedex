@@ -1,0 +1,43 @@
+#input-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#input-block input {
+  width: 80%;
+  height: 5.4rem;
+  padding: 1.6rem;
+  background: var(--color-input);
+  color: var(--color-text-input);
+  border: 0;
+}
+
+#input-block input::placeholder{
+  color: var(--color-text-input);
+}
+
+#input-block input:focus-within {
+  border-bottom: 0.3rem solid var(--color-secondary-circle);
+}
+
+#input-block button {
+  width: 10%;
+  height: 5.4rem;
+  border: 0;
+  cursor: pointer;
+  background: var(--color-box-base);
+}
+
+#input-block button img {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 860px) {
+  #input-block button img {
+    display: block;
+  }
+}
