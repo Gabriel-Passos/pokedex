@@ -34,6 +34,7 @@ const Pokedex: React.FC = () => {
       const response = await api.get(`/${pokemon}`);
   
       setPokemons(response.data);
+      setPokemon('');
     } else {
       alert("Informe um pokemon!");
     }
