@@ -30,9 +30,13 @@ const Pokedex: React.FC = () => {
   async function handlePokemon(event: FormEvent){
     event.preventDefault();
 
-    const response = await api.get(`/${pokemon}`);
-
-    setPokemons(response.data);
+    if(pokemon && pokemon > '0') {
+      const response = await api.get(`/${pokemon}`);
+  
+      setPokemons(response.data);
+    } else {
+      alert("Informe um pokemon!");
+    }
   }
 
   return (
